@@ -1,7 +1,8 @@
 ```markdown
 # PDF Image Caption Extractor
 
-This Python script extracts images from PDF files and their corresponding captions, saving the images to subfolders and the results in a CSV file. It’s designed for academic papers or similar documents with embedded images and captions starting with "Figure" or "Fig."
+This Python script extracts images from PDF files and their corresponding captions, saving the images to subfolders and the results in a CSV file.
+It’s designed for academic papers or similar documents with embedded images and captions starting with "Figure" or "Fig."
 
 ## Features
 - Extracts all images from PDF files in a specified folder.
@@ -135,10 +136,3 @@ python3 pdf_image_caption_extractor.py input/ output/ output/image_captions.csv
 - **Threshold**: The 1000-unit gap for caption blocks can be adjusted in the script.
 - **Inference**: Assumes sequential figure numbers; tweak if your PDFs skip numbers.
 - **Errors**: Ensure write permissions for the output folder.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributions
-Feel free to fork, submit issues, or contribute improvements via pull requests!
-```
