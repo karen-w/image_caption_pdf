@@ -104,7 +104,7 @@ if caption == "Caption not found" and last_figure_num > 0:
 ### Example Output
 - **Input PDF**: `ocypodidae_systematics.pdf`
 - **Extracted Image**: 
-  ![Figure 5](sample_output/page_08_img_1.png)
+  ![Figure 5](sample_output/page_08_img_1.jpeg)
   *Caption*: "Fig. 5. Photographs of some species of the genus Ocypode."
 - **CSV Snippet**:
   ```
@@ -128,7 +128,7 @@ python3 pdf_image_caption_extractor.py input/ output/ output/image_captions.csv
 - Check `output/ocypodidae_systematics/` for images (e.g., `page_08_img_1.png` for Fig. 5).
 - Open `output/image_captions.csv` in a spreadsheet or text editor.
 
-![Sample Image](sample_output/page_08_img_1.png)
+![Sample Image](sample_output/page_08_img_1.jpeg)
 *Caption extracted: "Fig. 5. Photographs of some species of the genus Ocypode."*
 
 ## Notes
