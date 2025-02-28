@@ -18,13 +18,10 @@ It’s designed for academic papers or similar documents with embedded images an
   ```
 - **Operating System**: Tested on Linux (adaptable to Windows/macOS with path adjustments).
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/pdf-image-caption-extractor.git
-   cd pdf-image-caption-extractor
-   ```
-2. Install dependencies in your Conda environment:
+## Download the python script
+  - [pdf_image_caption_extractor.py](pdf_image_caption_extractor.py)
+
+## Install dependencies in your Conda environment:
    ```bash
    conda activate your_env_name
    conda install -c conda-forge pymupdf
@@ -39,10 +36,6 @@ It’s designed for academic papers or similar documents with embedded images an
    - Use the provided Bash script or run directly:
      ```bash
      python3 pdf_image_caption_extractor.py <input_folder> <output_folder> <csv_output_path>
-     ```
-     Example:
-     ```bash
-     python3 pdf_image_caption_extractor.py input/ output/ output/image_captions.csv
      ```
 
 3. **Output**:
@@ -113,24 +106,6 @@ if caption == "Caption not found" and last_figure_num > 0:
   /home/user/output/ocypodidae_systematics/page_08_img_1.png,"Fig. 5. Photographs of some species of the genus Ocypode."
   /home/user/output/ocypodidae_systematics/page_10_img_1.png,"Figure 6"
   ```
-
-## Tutorial: Extracting Images and Captions
-
-### Step 1: Setup
-- Download the example PDF: [ocypodidae_systematics.pdf](ocypodidae_systematics.pdf).
-- Create an `input/` folder and place the PDF there.
-
-### Step 2: Run the Script
-```bash
-python3 pdf_image_caption_extractor.py input/ output/ output/image_captions.csv
-```
-
-### Step 3: Verify Results
-- Check `output/ocypodidae_systematics/` for images (e.g., `page_08_img_1.png` for Fig. 5).
-- Open `output/image_captions.csv` in a spreadsheet or text editor.
-
-![Sample Image](sample_output/page_08_img_1.jpeg)
-*Caption extracted: "Fig. 5. Photographs of some species of the genus Ocypode."*
 
 ## Notes
 - **Threshold**: The 1000-unit gap for caption blocks can be adjusted in the script.
